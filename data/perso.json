@@ -63,5 +63,18 @@
         "aime": "a",
         "deteste": "a",
         "autres": "a"
+    },
+    {
+        "id": 6,
+        "nom": "A",
+        "prenom": "B",
+        "taille": 1,
+        "sexe": "homme",
+        "poids": 1,
+        "age": 1,
+        "competence": "C",
+        "aime": "D",
+        "deteste": "E",
+        "autres": "F"
     }
 ]
