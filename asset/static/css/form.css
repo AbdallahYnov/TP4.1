@@ -1,0 +1,85 @@
+body {
+    background-image: url(/static/image/bg/beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Text color */
+    font-family: 'Monserrat-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.edit-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Maximum width for the form box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.box {
+    display: inline-block;
+    background-color: rgba(5, 14, 59, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

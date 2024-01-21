@@ -1,0 +1,67 @@
+[
+    {
+        "id": 2,
+        "nom": "Mr",
+        "prenom": "Abdallah",
+        "taille": 1.87,
+        "sexe": "homme",
+        "poids": 75,
+        "age": 20,
+        "competence": "Tout",
+        "aime": "Choses",
+        "deteste": "Trucs",
+        "autres": "Extra"
+    },
+    {
+        "id": 1,
+        "nom": "Jean",
+        "prenom": "Michel",
+        "taille": 1.8,
+        "sexe": "homme",
+        "poids": 70,
+        "age": 65,
+        "competence": "nage",
+        "aime": "lire",
+        "deteste": "musique",
+        "autres": "prof"
+    },
+    {
+        "id": 3,
+        "nom": "Merad",
+        "prenom": "Abdallah",
+        "taille": 1.87,
+        "sexe": "homme",
+        "poids": 75,
+        "age": 20,
+        "competence": "Tout",
+        "aime": "choses",
+        "deteste": "trucs",
+        "autres": "Extra"
+    },
+    {
+        "id": 4,
+        "nom": "vladimi",
+        "prenom": "bassia",
+        "taille": 1.87,
+        "sexe": "homme",
+        "poids": 75,
+        "age": 20,
+        "competence": "Tout",
+        "aime": "choses",
+        "deteste": "trucs",
+        "autres": "Extra"
+    },
+    {
+        "id": 5,
+        "nom": "a",
+        "prenom": "a",
+        "taille": 1,
+        "sexe": "homme",
+        "poids": 1,
+        "age": 1,
+        "competence": "a",
+        "aime": "a",
+        "deteste": "a",
+        "autres": "a"
+    }
+]

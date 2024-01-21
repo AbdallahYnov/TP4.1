@@ -1,0 +1,84 @@
+{{define "home"}}
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Go Lantah</title>
+</head>
+<body>
+    <div class="all-page">
+        <div class="filter"></div>
+        <div class="left-half">
+            <div class="top-left">
+                <div class="mark-title">
+                    Rendue final
+                </div>
+                <div class="copyright">
+                    Abdallah Merad
+                </div>
+            </div>
+            <div class="bottom-left">
+                <div class="nb-title">
+                    01
+                </div>
+                <div class="title">
+                    Ymmersion
+                </div>
+                <div class="title">
+                    Go Lantah
+                </div>
+                <div class="go-btn">
+                    <a href="/create">Create !</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="top-right">
+                <div class="user-img"></div>
+                <div class="hamburger-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="middle-right">
+                <div class="center">
+                    <div class="subtitle-right">Cherche un personnage</div>
+                    <div class="title-right">C'est l'heure de choisir son personnage !</div>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="nav-top">
+                    <div class="nav-title"><span>Nos </span><span>personnages</span></div>
+                    <div class="nav-info">
+                        <span>Explore</span>
+                        <div class="nav-right-btn"><a href=""></a></div>
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    {{range .}}
+                    <ul class="nav-item">
+                        <p class="id">ID: {{.ID}}</a></p>
+                        <p class="nom">Surame: {{.Nom}}</p>
+                        <p class="prenom">Name: {{.Prenom}}</p>
+                        <p class="taille">Height: {{.Taille}}</p>
+                        <p class="sexe">Sex: {{.Sexe}}</p>
+                        <p class="poids">Weight: {{.Poids}}</p>
+                        <p class="age">Age: {{.Age}}</p>
+                        <p class="competence">Skills: {{.Competence}}</p>
+                        <p class="aime">Likes: {{.Aime}}</p>
+                        <p class="deteste">Dislikes: {{.Deteste}}</p>
+                        <p class="autres">Other: {{.Autres}}</p>
+                        <a href="/edit?id={{.ID}}">Edit</a>
+                        <a href="/delete?id={{.ID}}">Delete</a>
+                    </ul>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{{end}}

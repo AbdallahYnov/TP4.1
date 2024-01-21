@@ -1,0 +1,55 @@
+{{define "edit"}}
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier le personnage</title>
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+
+<body class="all-page">
+    <div class="box">
+        <h1>Modifier le personnage</h1>
+        <form action="/edit?id={{.ID}}" method="post">
+            <!-- Include a hidden field for character ID or some identifier -->
+            <input type="hidden" name="id" value="{{.ID}}">
+
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" value="{{.Nom}}" required><br>
+
+            <label for="prenom">Prenom:</label>
+            <input type="text" id="prenom" name="prenom" value="{{.Prenom}}" required><br>
+
+            <label for="taille">Taille:</label>
+            <input type="number" step="0.01" id="taille" name="taille" value="{{.Taille}}" required><br>
+
+            <label for="sexe">Sexe:</label>
+            <select id="sexe" name="sexe" required>
+                <option value="homme" {{if eq .Sexe "homme" }}selected{{end}}>Homme</option>
+                <option value="femme" {{if eq .Sexe "femme" }}selected{{end}}>Femme</option>
+            </select><br>
+
+            <label for="poids">Poids:</label>
+            <input type="number" id="poids" name="poids" value="{{.Poids}}" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="{{.Age}}" required><br>
+
+            <label for="competence">Competence:</label>
+            <input type="text" id="competence" name="competence" value="{{.Competence}}" required><br>
+
+            <label for="aime">Aime:</label>
+            <input type="text" id="aime" name="aime" value="{{.Aime}}" required><br>
+
+            <label for="deteste">Deteste:</label>
+            <input type="text" id="deteste" name="deteste" value="{{.Deteste}}" required><br>
+
+            <label for="autres">Autres:</label>
+            <input type="text" id="autres" name="autres" value="{{.Autres}}" required><br>
+
+            <button type="submit">Modifier</button>
+        </form>
+    </div>
+</body>
+{{end}}
